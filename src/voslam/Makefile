@@ -10,7 +10,7 @@ IFLAGS += -I../../sharedlib/libtf/src -I../../sharedlib/libviso2.3/src -I/usr/lo
 		  
 LFLAGS += -L/usr/lib64 -L../../sharedlib/libtf/src -L../../sharedlib/libviso2.3/src -L/usr/local/cuda/lib64/ -L/usr/local/lib/
 LFLAGS += -lglobal -lipc -lparam_interface -lstereo_interface -lvisual_odometry_interface -lGL -lGLU -lglut `pkg-config --libs opencv` \
-          -ltf -lviso -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath -lboost_system -lboost_thread-mt -lrt -lboost_signals -lboost_system
+          -ltf -lviso -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath -lboost_system -lboost_thread -lrt -lboost_signals -lboost_system
 LFLAGS += -lvtkCommon -lvtkFiltering -lvtkRendering -lpcl_common -lpcl_surface -lpcl_io -lpcl_registration -lpcl_kdtree -lpcl_features -lpcl_search -lpcl_octree -lpcl_sample_consensus -lpcl_filters -lpcl_visualization 
 LFLAGS += -lfused_odometry_interface -llocalize_ackerman_interface
 

@@ -12,7 +12,7 @@ LFLAGS += -lglobal -lparam_interface -lipc -lGL -lGLU -lglut \
 	 -llocalize_ackerman_interface -lrddf_interface \
 	 `pkg-config --libs opencv` -L$(CARMEN_HOME)/sharedlib/libtf/src \
 	 -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath \
-	 -lboost_thread-mt -lrt -lboost_signals -lboost_system
+	 -lboost_thread -lrt -lboost_signals -lboost_system
 
 	
 CFLAGS += -W -Wall `pkg-config --cflags opencv`

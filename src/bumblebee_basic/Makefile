@@ -34,7 +34,7 @@ LFLAGS += -L$(CARMEN_HOME)/sharedlib/libtf/src \
 	 -llocalize_ackerman_interface -lrddf_interface \
 	 `pkg-config --libs opencv` \
 	 -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath \
-	 -lboost_thread-mt -lrt -lboost_signals -lboost_system \
+	 -lboost_thread -lrt -lboost_signals -lboost_system \
 	 -lparam_interface -lipc -lglobal -lglobal_graphics -lbumblebee_basic_interface \
 	`$(GTK_CONFIG) --libs` 
 	

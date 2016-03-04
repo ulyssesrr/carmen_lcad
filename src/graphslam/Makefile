@@ -13,7 +13,7 @@ IFLAGS += -I$(CARMEN_HOME)/sharedlib/prob_models -I$(CARMEN_HOME)/sharedlib/gl_p
 IFLAGS += `pkg-config --cflags opencv`
 
 LFLAGS += -lglobal -lipc -llocalize_ackerman_interface -lfused_odometry_interface -lvelodyne_interface -lparam_interface -lGL -lglut -lGLU \
-	 	-L$(CARMEN_HOME)/sharedlib/libtf/src -ltf -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath -lboost_thread-mt -lboost_system \
+	 	-L$(CARMEN_HOME)/sharedlib/libtf/src -ltf -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath -lboost_thread -lboost_system \
 		-lrt -lboost_signals # -ltf_util    
 LFLAGS += -lrobot_ackerman_interface -lobstacle_avoider_interface \
 		-lmap_io -lmap_util -llaser_interface -lfused_odometry_interface -lvelodyne_interface \
@@ -23,7 +23,7 @@ LFLAGS += -lrobot_ackerman_interface -lobstacle_avoider_interface \
 		-lxsens_interface
 #LFLAGS += -L /usr/local/lib -lcholmod -lg2o_core -lg2o_stuff -lg2o_types_slam2d -lg2o_cli
 LFLAGS += -lvtkCommon -lvtkFiltering -lpcl_common -lpcl_surface -lpcl_io -lpcl_registration -lpcl_kdtree -lpcl_features -lpcl_search \
-		-lpcl_octree -lpcl_sample_consensus -lpcl_filters -lpcl_visualization  -lboost_system -lboost_thread-mt -lrt -lboost_signals -lboost_system
+		-lpcl_octree -lpcl_sample_consensus -lpcl_filters -lpcl_visualization  -lboost_system -lboost_thread -lrt -lboost_signals -lboost_system
 LFLAGS += -L$(CARMEN_HOME)/sharedlib/prob_models -L$(CARMEN_HOME)/sharedlib/gl_plotter -lprob_models -lrotation_geometry
 LFLAGS += `pkg-config --libs opencv`	  
 LFLAGS += -lgrid_mapping_interface -lgrid_mapping -lmap_io -lmap_interface

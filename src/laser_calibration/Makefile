@@ -20,11 +20,11 @@ LFLAGS += -lgrid_mapping -lprob_models -lm -lz -lmap_io -lmap_util -llocalize_ac
 	-llocalize_ackerman_interface -lmap_interface -lgrid_mapping -lultrasonic_filter_interface \
 	-lstereo_mapping_interface -lrotation_geometry -lvelodyne_interface -lfused_odometry_interface  -lstereo_velodyne \
 	-lstereo_velodyne_interface -lstereo_interface `pkg-config --libs opencv` -lgeometry -lmap_server_interface -lsimulator_ackerman_interface
-LFLAGS += -ltf -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath -lboost_thread-mt -lrt -lboost_signals -lboost_system
+LFLAGS += -ltf -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath -lboost_thread -lrt -lboost_signals -lboost_system
 
 # Application specific include directories.
 IFLAGS += -I/usr/include/eigen3 -I/usr/local/include/pcl-1.7/  -I/usr/include/vtk-5.8/
-LFLAGS += -lvtkCommon -lvtkFiltering -lpcl_common -lpcl_surface -lpcl_io -lpcl_registration -lpcl_kdtree -lpcl_features -lpcl_search -lpcl_octree -lpcl_sample_consensus -lpcl_filters -lpcl_visualization  -lboost_system -lboost_thread-mt -lrt -lboost_signals -lboost_system
+LFLAGS += -lvtkCommon -lvtkFiltering -lpcl_common -lpcl_surface -lpcl_io -lpcl_registration -lpcl_kdtree -lpcl_features -lpcl_search -lpcl_octree -lpcl_sample_consensus -lpcl_filters -lpcl_visualization  -lboost_system -lboost_thread -lrt -lboost_signals -lboost_system
 
 	
 CFLAGS += -Wall -std=c99

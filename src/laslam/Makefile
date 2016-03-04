@@ -13,7 +13,7 @@ IFLAGS += -I$(CARMEN_HOME)/sharedlib/libtf/src -I/usr/local/include/bullet/ -I/u
 LFLAGS += -L/usr/local/lib -L/home/lcad/tplib/pcl/build/lib -L$(CARMEN_HOME)/sharedlib/libtf/src
 LFLAGS += -lparam_interface -lipc -lglobal -lstereo_interface -lbumblebee_basic_interface -lvisual_odometry_interface \
 	  -lglm -ljpeg -lGL -lGLU -lglut -ltf -lBulletDynamics \
-	  -lBulletCollision -lBulletSoftBody -lLinearMath -lboost_thread-mt -lrt -lboost_signals -lboost_system \
+	  -lBulletCollision -lBulletSoftBody -lLinearMath -lboost_thread -lrt -lboost_signals -lboost_system \
 	  `pkg-config --libs opencv`
 
 CFLAGS += -Wno-unknown-pragmas

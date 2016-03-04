@@ -19,7 +19,7 @@ LFLAGS += -lgrid_mapping -lgrid_mapping_interface -lglobal -lparam_interface -lm
 	  -lGLEW -lGL -lGLU -lglut -lX11 -lmap_interface -lbase_ackerman_interface \
 	  -lstereo_velodyne -lstereo_velodyne_interface -lstereo_interface
 
-LFLAGS += -ltf -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath -lboost_thread-mt -lrt -lboost_signals -lboost_system
+LFLAGS += -ltf -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath -lboost_thread -lrt -lboost_signals -lboost_system
 
 IFLAGS += `pkg-config --cflags opencv`
 LFLAGS += `pkg-config --libs opencv`

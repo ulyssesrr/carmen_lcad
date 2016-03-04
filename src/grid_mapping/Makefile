@@ -18,7 +18,7 @@ LFLAGS += -lprob_models -lmap_io -lglobal -lparam_interface -llaser_interface -l
 	-lgrid_mapping_interface  -lobstacle_avoider_interface -llocalize_ackerman_interface \
 	-lultrasonic_filter_interface -lvisual_odometry_interface -ljpeg \
 	-llocalize_ackerman_interface -lmap_interface  -lmap_server_interface \
-	-ltf -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath -lboost_thread-mt -lrt -lboost_signals -lboost_system -lrotation_geometry
+	-ltf -lBulletCollision -lBulletDynamics -lBulletSoftBody -lLinearMath -lboost_thread -lrt -lboost_signals -lboost_system -lrotation_geometry
 	
 CFLAGS +=  -std=c99
 
